@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Background -->
+  <rect width="256" height="256" fill="#2c2c2b"/>
+
+  <!-- Orange circular background -->
+  <circle cx="128" cy="128" r="100" fill="#ffa800"/>
+
+  <!-- P text -->
+  <text x="128" y="160" font-size="120" font-weight="bold" fill="#2c2c2b" text-anchor="middle" font-family="Arial, sans-serif">P</text>
+</svg>

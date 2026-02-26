@@ -1,0 +1,300 @@
+{
+  "site": {
+    "name": "Pooja Tours and Travels",
+    "tagline": "Your Trusted Travel Partner",
+    "phone": "+91 95791 11356",
+    "phoneRaw": "919579111356",
+    "whatsappText": "Hi! I'd like to book a cab with Pooja Tours and Travels. Please share availability.",
+    "email": "Poojatoursandtravels3@gmail.com",
+    "address": "Pune, Maharashtra, India",
+    "mapLink": "https://www.google.com/maps/search/Pune%2C%20Maharashtra%2C%20India/@18.5246,73.8786,17z?hl=en",
+    "social": {
+      "facebook": "https://www.facebook.com/110198160835145",
+      "instagram": "#",
+      "twitter": "#"
+    }
+  },
+  "hero": {
+    "badge": "Trusted by 10,000+ happy passengers",
+    "titleLine1": "Hire the Best Cab",
+    "titleAccent": "Outstation",
+    "titleLine2": "from Pune & Mumbai",
+    "description": "Looking for a reliable and comfortable cab for outstation, airport transfers, or local rides across Maharashtra, Gujarat, Rajasthan & beyond? Pooja Tours and Travels is your trusted partner for every journey.",
+    "callCTA": "Call to Book",
+    "whatsappCTA": "WhatsApp Us",
+    "stats": [
+      { "value": "24/7", "label": "Service Available" },
+      { "value": "5+", "label": "Vehicle Types" },
+      { "value": "10K+", "label": "Happy Customers" }
+    ]
+  },
+  "features": [
+    {
+      "title": "24/7 Service",
+      "desc": "We understand that your travel needs may arise at any time. We are available round the clock, every day of the year."
+    },
+    {
+      "title": "Hassle-Free Rides",
+      "desc": "Sit back, relax, and let us handle the journey. Clean cars, professional drivers, zero stress."
+    },
+    {
+      "title": "Easy Booking",
+      "desc": "Booking a Pooja Tours cab is a breeze! One call or WhatsApp message and your ride is confirmed."
+    }
+  ],
+  "fleet": [
+    {
+      "id": "sedan",
+      "name": "Sedan",
+      "models": "Etios / Dzire / Xcent",
+      "price": "11",
+      "badge": "Best Value",
+      "image": "/images/etios dzire xcent.png",
+      "seats": "4 Passengers",
+      "bags": "3 Bags",
+      "href": "/fleet/sedan",
+      "features": [
+        "Toyota Etios / Maruti Dzire / Hyundai Xcent",
+        "4 Seats + 3 Bags",
+        "24/7 Available",
+        "GPS Enabled",
+        "AC Cabin"
+      ],
+      "description": "Our sedan fleet offers perfect comfort for intercity travel and airport runs. Choose from Toyota Etios, Maruti Dzire, or Hyundai Xcent for a smooth and affordable ride."
+    },
+    {
+      "id": "ertiga",
+      "name": "Ertiga",
+      "models": "Maruti Ertiga",
+      "price": "13",
+      "badge": "Popular",
+      "image": "/images/ertiga.png",
+      "seats": "6 Passengers",
+      "bags": "3 Bags",
+      "href": "/fleet/ertiga",
+      "features": [
+        "Maruti Ertiga",
+        "6 Seats + 3 Bags",
+        "24/7 Available",
+        "GPS Enabled",
+        "AC Cabin"
+      ],
+      "description": "The Maruti Ertiga is the perfect mid-size MPV for small groups and families. Spacious, fuel-efficient, and comfortable for both city and outstation trips."
+    },
+    {
+      "id": "innova",
+      "name": "Innova",
+      "models": "Toyota Innova",
+      "price": "16",
+      "badge": "Spacious",
+      "image": "/images/innova.png",
+      "seats": "7 Passengers",
+      "bags": "4 Bags",
+      "href": "/fleet/innova",
+      "features": [
+        "Toyota Innova",
+        "7 Seats + 4 Bags",
+        "24/7 Available",
+        "GPS Enabled",
+        "Premium AC Cabin"
+      ],
+      "description": "The Toyota Innova remains India's most trusted family SUV. Ideal for long-distance outstation trips, airport transfers, and corporate travel across Maharashtra and Gujarat."
+    },
+    {
+      "id": "innova-crysta",
+      "name": "Innova Crysta",
+      "models": "Toyota Innova Crysta",
+      "price": "18",
+      "badge": "Premium",
+      "image": "/images/innova_crysta.png",
+      "seats": "7 Passengers",
+      "bags": "4 Bags",
+      "href": "/fleet/innova-crysta",
+      "features": [
+        "Toyota Innova Crysta",
+        "7 Seats + Large Boot",
+        "24/7 Available",
+        "GPS Enabled",
+        "Luxury Cabin"
+      ],
+      "description": "Travel in luxury with the Toyota Innova Crysta. Premium seating, powerful engine, and superior comfort make it the top choice for special occasions, business tours, and premium outstation trips."
+    },
+    {
+      "id": "tempo",
+      "name": "Tempo Traveller",
+      "models": "12-13 Seater",
+      "price": "24",
+      "badge": "Group Travel",
+      "image": "/images/suv_muv_tuv.png",
+      "seats": "12-13 Passengers",
+      "bags": "5 Bags",
+      "href": "/fleet/tempo",
+      "features": [
+        "12–13 Seater Capacity",
+        "24/7 Available",
+        "GPS Enabled",
+        "AC Available",
+        "Ideal for Group Tours"
+      ],
+      "description": "Planning a group trip, pilgrimage, corporate outing, or wedding procession? Our Tempo Traveller handles large groups with ease, ensuring comfort across long distances."
+    }
+  ],
+  "routes": [
+    {
+      "from": "Pune",
+      "to": "Mumbai",
+      "distance": "~150 km",
+      "duration": "3–4 hrs",
+      "popular": true,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Surat",
+      "distance": "~290 km",
+      "duration": "5–6 hrs",
+      "popular": false,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Ahmedabad",
+      "distance": "~530 km",
+      "duration": "8–9 hrs",
+      "popular": true,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta", "Tempo Traveller"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Vadodara",
+      "distance": "~430 km",
+      "duration": "7–8 hrs",
+      "popular": false,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Kolhapur",
+      "distance": "~375 km",
+      "duration": "6–7 hrs",
+      "popular": false,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Nashik",
+      "distance": "~165 km",
+      "duration": "3–4 hrs",
+      "popular": true,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+    },
+    {
+      "from": "Mumbai",
+      "to": "Indore / Ujjain",
+      "distance": "~590 km",
+      "duration": "10–11 hrs",
+      "popular": false,
+      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta", "Tempo Traveller"]
+    }
+  ],
+  "services": [
+    {
+      "title": "Airport Transfers",
+      "desc": "Reliable and punctual pickups & drops to all major airports. Pune, Mumbai, Ahmedabad, Bangalore, Hyderabad – we've got you covered.",
+      "emoji": "✈️"
+    },
+    {
+      "title": "Outstation Trips",
+      "desc": "MH · GJ · RJ · MP · Hyderabad · Bangalore — We operate across all major outstation routes with experienced local drivers.",
+      "emoji": "🗺️"
+    },
+    {
+      "title": "One Way / Round Trip",
+      "desc": "Whether it's a one-way drop or a multi-day round trip, we have flexible packages to suit your travel plan and budget.",
+      "emoji": "↔️"
+    },
+    {
+      "title": "Hourly Rentals",
+      "desc": "Need a cab for a few hours? Our hourly rental packages give you full flexibility for local errands, meetings, and city tours.",
+      "emoji": "⏱️"
+    }
+  ],
+  "coverage": {
+    "title": "We Cover All of",
+    "subtitle": "Maharashtra · Gujarat · Rajasthan · Madhya Pradesh · Hyderabad · Bangalore",
+    "regions": ["MH", "GJ", "RJ", "MP", "HYD", "BLR"]
+  },
+  "about": {
+    "subtitle": "About Us",
+    "title": "Your Trusted Travel Partner Across Western India",
+    "description": "At Pooja Tours and Travels, we take pride in being your reliable and dedicated cab service operating from Pune. With years of experience and a passion for seamless travel, we connect Maharashtra, Gujarat, Rajasthan, and beyond — one comfortable journey at a time.",
+    "story": "Pooja Tours and Travels was founded with a simple mission: to make outstation travel stress-free, safe, and affordable. Starting in Pune, we have grown to serve thousands of happy customers across Western and Central India.",
+    "stats": [
+      { "value": "9+", "label": "Years Serving" },
+      { "value": "10K+", "label": "Happy Customers" },
+      { "value": "4.9★", "label": "Average Rating" },
+      { "value": "15+", "label": "States Covered" }
+    ],
+    "whyChoose": [
+      {
+        "title": "Expert Route Knowledge",
+        "desc": "Our drivers know every major route between Pune, Mumbai, Ahmedabad, Surat, Indore, and beyond — ensuring fast and safe journeys."
+      },
+      {
+        "title": "Safety First",
+        "desc": "All vehicles are well-maintained and regularly serviced. Drivers are verified, trained, and courteous professionals."
+      },
+      {
+        "title": "Flexible Fleet",
+        "desc": "From economical sedans to premium Innova Crysta and group Tempo Travellers — pick what suits your group and budget."
+      },
+      {
+        "title": "24/7 Availability",
+        "desc": "Early morning flights or late-night arrivals — we are always available. Book anytime, travel anytime."
+      },
+      {
+        "title": "Transparent Pricing",
+        "desc": "No hidden charges, no surprises. You'll know the full fare before your journey begins."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "name": "Sneha Patel",
+      "location": "Pune",
+      "rating": 5,
+      "avatar": "SP",
+      "text": "Excellent service! Booked a Pune–Mumbai cab on short notice and the driver arrived early. The car was spotless and the ride was smooth. Highly recommend Pooja Tours for any outstation trip!"
+    },
+    {
+      "name": "Rahul Sharma",
+      "location": "Mumbai",
+      "rating": 5,
+      "avatar": "RS",
+      "text": "Used their Mumbai–Ahmedabad cab service for a family trip. Innova Crysta was perfect — spotless, AC, and the driver was very professional. Will definitely book again."
+    },
+    {
+      "name": "Priya Mehta",
+      "location": "Surat",
+      "rating": 5,
+      "avatar": "PM",
+      "text": "We booked a Tempo Traveller for our group of 12 for a Pune temple tour. The vehicle was well-maintained and the driver was brilliant. Will be recommending Pooja Tours to everyone!"
+    },
+    {
+      "name": "Amit Joshi",
+      "location": "Pune",
+      "rating": 5,
+      "avatar": "AJ",
+      "text": "I use Pooja Tours for my Mumbai airport transfers regularly. Always on time, always comfortable, always the best price. 5 stars without hesitation."
+    }
+  ],
+  "cta": {
+    "title": "Ready to experience the best cab service from Pune & Mumbai?",
+    "bookLabel": "Book Now",
+    "contactLabel": "Contact Us"
+  },
+  "footer": {
+    "description": "Your trusted partner for outstation, airport, and local cab services across Maharashtra, Gujarat, Rajasthan, Madhya Pradesh, Hyderabad, and Bangalore.",
+    "copyright": "© 2025 Pooja Tours and Travels. All rights reserved."
+  }
+}
