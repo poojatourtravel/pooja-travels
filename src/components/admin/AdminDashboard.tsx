@@ -358,8 +358,12 @@ export default function AdminDashboard({ initialContent }: Props) {
                       <Input value={vehicle.bags} onChange={(v) => update(["fleet", String(i), "bags"], v)} />
                     </Field>
                   </Grid>
-                  <Field label="Image Path (e.g. /images/ertiga.png)" className="mt-3">
-                    <Input value={vehicle.image} onChange={(v) => update(["fleet", String(i), "image"], v)} />
+                  <Field label="Image URL (local path or external URL)" className="mt-3">
+                    <Input 
+                      value={vehicle.image} 
+                      onChange={(v) => update(["fleet", String(i), "image"], v)} 
+                      placeholder="e.g. /images/ertiga.png or https://example.com/image.jpg"
+                    />
                   </Field>
                   <Field label="Description" className="mt-3">
                     <Textarea value={vehicle.description} onChange={(v) => update(["fleet", String(i), "description"], v)} rows={2} />
