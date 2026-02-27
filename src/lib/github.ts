@@ -33,10 +33,13 @@ export async function fetchContentFromGitHub(): Promise<{
 
   try {
     const res = await fetch(
-      `${GITHUB_API}/repos/${owner}/${repo}/contents/${path}`,
+      `${GITHUB_API}/repos/${owner}/${repo}/contents/${path}?ref=main`,
       {
-        headers: githubHeaders(token),
-        next: { revalidate: 60 }, // cache for 60s, auto-revalidate
+        headers: {
+            ...githubHeaders(token),
+            'Cache-Control': 'no-cache'
+        },
+        cache: 'no-store',
       }
     );
 
@@ -59,8 +62,14 @@ export async function getGitHubFileSha(): Promise<string | null> {
 
   try {
     const res = await fetch(
-      `${GITHUB_API}/repos/${owner}/${repo}/contents/${path}`,
-      { headers: githubHeaders(token) }
+      `${GITHUB_API}/repos/${owner}/${repo}/contents/${path}?ref=main`,
+      { 
+        headers: {
+            ...githubHeaders(token),
+            'Cache-Control': 'no-cache'
+        },
+        cache: 'no-store'
+      }
     );
     if (!res.ok) return null;
     const json = await res.json();

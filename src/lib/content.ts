@@ -11,18 +11,16 @@ import { fetchContentFromGitHub } from "@/lib/github";
 import localContent from "@/data/content.json";
 
 export async function getContent(): Promise<SiteContent> {
-  try {
-    const remote = await fetchContentFromGitHub();
-    const rc = remote?.content as Record<string, unknown> | undefined;
-    if (rc && rc.site && rc.hero && rc.fleet) {
-      return rc as unknown as SiteContent;
-    }
-  } catch {
-    // Fall through to local
+  const remote = await fetchContentFromGitHub();
+  const rc = remote?.content as Record<string, unknown> | undefined;
+
+  if (rc && rc.site && rc.hero && rc.fleet) {
+    return rc as unknown as SiteContent;
   }
 
-  // Always-safe local fallback
-  return localContent as unknown as SiteContent;
+  // If remote fetch failed or returned invalid content, throw an error
+  // instead of falling back to local content
+  throw new Error("Failed to fetch content from GitHub. Please check configuration or try again.");
 }
 
 export function getLocalContent(): SiteContent {

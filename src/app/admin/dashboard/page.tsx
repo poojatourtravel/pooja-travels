@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getLocalContent } from "@/lib/content";
+import { getContent } from "@/lib/content";
 import AdminDashboard from "@/components/admin/AdminDashboard";
 
 export const metadata: Metadata = {
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AdminDashboardPage() {
-  // Load current content (local for editing baseline)
-  const content = getLocalContent();
+  // Load current content (strictly from GitHub)
+  const content = await getContent();
   return <AdminDashboard initialContent={content} />;
 }

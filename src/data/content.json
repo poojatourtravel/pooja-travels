@@ -23,9 +23,18 @@
     "callCTA": "Call to Book",
     "whatsappCTA": "WhatsApp Us",
     "stats": [
-      { "value": "24/7", "label": "Service Available" },
-      { "value": "5+", "label": "Vehicle Types" },
-      { "value": "10K+", "label": "Happy Customers" }
+      {
+        "value": "24/7",
+        "label": "Service Available"
+      },
+      {
+        "value": "5+",
+        "label": "Vehicle Types"
+      },
+      {
+        "value": "10K+",
+        "label": "Happy Customers"
+      }
     ]
   },
   "features": [
@@ -146,7 +155,12 @@
       "distance": "~150 km",
       "duration": "3–4 hrs",
       "popular": true,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta"
+      ]
     },
     {
       "from": "Mumbai",
@@ -154,7 +168,12 @@
       "distance": "~290 km",
       "duration": "5–6 hrs",
       "popular": false,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta"
+      ]
     },
     {
       "from": "Mumbai",
@@ -162,7 +181,13 @@
       "distance": "~530 km",
       "duration": "8–9 hrs",
       "popular": true,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta", "Tempo Traveller"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta",
+        "Tempo Traveller"
+      ]
     },
     {
       "from": "Mumbai",
@@ -170,7 +195,12 @@
       "distance": "~430 km",
       "duration": "7–8 hrs",
       "popular": false,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta"
+      ]
     },
     {
       "from": "Mumbai",
@@ -178,7 +208,12 @@
       "distance": "~375 km",
       "duration": "6–7 hrs",
       "popular": false,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta"
+      ]
     },
     {
       "from": "Mumbai",
@@ -186,7 +221,12 @@
       "distance": "~165 km",
       "duration": "3–4 hrs",
       "popular": true,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta"
+      ]
     },
     {
       "from": "Mumbai",
@@ -194,7 +234,13 @@
       "distance": "~590 km",
       "duration": "10–11 hrs",
       "popular": false,
-      "vehicles": ["Sedan", "Ertiga", "Innova", "Innova Crysta", "Tempo Traveller"]
+      "vehicles": [
+        "Sedan",
+        "Ertiga",
+        "Innova",
+        "Innova Crysta",
+        "Tempo Traveller"
+      ]
     }
   ],
   "services": [
@@ -222,7 +268,14 @@
   "coverage": {
     "title": "We Cover All of",
     "subtitle": "Maharashtra · Gujarat · Rajasthan · Madhya Pradesh · Hyderabad · Bangalore",
-    "regions": ["MH", "GJ", "RJ", "MP", "HYD", "BLR"]
+    "regions": [
+      "MH",
+      "GJ",
+      "RJ",
+      "MP",
+      "HYD",
+      "BLR"
+    ]
   },
   "about": {
     "subtitle": "About Us",
@@ -230,10 +283,22 @@
     "description": "At Pooja Tours and Travels, we take pride in being your reliable and dedicated cab service operating from Pune. With years of experience and a passion for seamless travel, we connect Maharashtra, Gujarat, Rajasthan, and beyond — one comfortable journey at a time.",
     "story": "Pooja Tours and Travels was founded with a simple mission: to make outstation travel stress-free, safe, and affordable. Starting in Pune, we have grown to serve thousands of happy customers across Western and Central India.",
     "stats": [
-      { "value": "9+", "label": "Years Serving" },
-      { "value": "10K+", "label": "Happy Customers" },
-      { "value": "4.9★", "label": "Average Rating" },
-      { "value": "15+", "label": "States Covered" }
+      {
+        "value": "9+",
+        "label": "Years Serving"
+      },
+      {
+        "value": "10K+",
+        "label": "Happy Customers"
+      },
+      {
+        "value": "4.9★",
+        "label": "Average Rating"
+      },
+      {
+        "value": "15+",
+        "label": "States Covered"
+      }
     ],
     "whyChoose": [
       {
