@@ -6,9 +6,21 @@ import FloatingButtons from "@/components/FloatingButtons";
 import FleetDetailPage from "@/components/FleetDetailPage";
 
 export const metadata: Metadata = {
-  title: "Innova Cab | Pooja Tours and Travels",
+  title: "Toyota Innova @ ₹16/km | 7-Seater Premium Cab | Pooja Tours",
   description:
-    "Book a Toyota Innova at ₹16/km. 7-seater premium cab — perfect for business and outstation trips from Pune & Mumbai.",
+    "Book a Toyota Innova at ₹16/km from Pune & Mumbai. 7-seater premium cab for families, business travelers, outstation trips. Professional driver, AC, GPS enabled, 24/7 available.",
+  keywords:
+    "Innova cab, 7 seater cab, premium cab, business taxi, Toyota Innova, outstation cab, family travel",
+  openGraph: {
+    title: "Toyota Innova @ ₹16/km | Pooja Tours and Travels",
+    description:
+      "Book a 7-seater Toyota Innova at ₹16/km. Premium cab for business and family outstation trips from Pune & Mumbai.",
+    url: "https://poojatoursandtravels.com/fleet/innova",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://poojatoursandtravels.com/fleet/innova",
+  },
 };
 
 export default async function InnovaPage() {
@@ -16,6 +28,32 @@ export default async function InnovaPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Toyota Innova Cab Service - 7 Seater Premium Cab",
+            description:
+              "Book a Toyota Innova at ₹16/km. 7-seater premium cab for families, business travelers, and outstation trips from Pune & Mumbai.",
+            image: "https://poojatoursandtravels.com/images/innova.png",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "INR",
+              price: "16",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.8",
+              reviewCount: "380",
+            },
+          }),
+        }}
+      />
       <Navbar site={site} />
       <FleetDetailPage
         name="Innova"

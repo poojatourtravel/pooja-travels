@@ -6,9 +6,21 @@ import FloatingButtons from "@/components/FloatingButtons";
 import FleetDetailPage from "@/components/FleetDetailPage";
 
 export const metadata: Metadata = {
-  title: "Ertiga Cab | Pooja Tours and Travels",
+  title: "Maruti Ertiga @ ₹13/km | 6-Seater SUV | Pooja Tours",
   description:
-    "Book an Ertiga cab at ₹13/km. 6-seater SUV — ideal for families and outstation trips from Pune & Mumbai.",
+    "Book a Maruti Ertiga at ₹13/km from Pune & Mumbai. 6-seater SUV, perfect for families and group outstation trips. Professional driver, AC, GPS enabled, 24/7 available.",
+  keywords:
+    "Ertiga cab, 6 seater cab, family SUV, outstation cab, Maruti Ertiga, group cab, Pune to Mumbai cab",
+  openGraph: {
+    title: "Maruti Ertiga @ ₹13/km | Pooja Tours and Travels",
+    description:
+      "Book a 6-seater Maruti Ertiga at ₹13/km. Perfect for families and group outstation trips from Pune & Mumbai.",
+    url: "https://poojatoursandtravels.com/fleet/ertiga",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://poojatoursandtravels.com/fleet/ertiga",
+  },
 };
 
 export default async function ErtigaPage() {
@@ -16,6 +28,32 @@ export default async function ErtigaPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Maruti Ertiga Cab Service - 6 Seater SUV",
+            description:
+              "Book a Maruti Ertiga at ₹13/km. 6-seater SUV perfect for families and group outstation trips from Pune & Mumbai.",
+            image: "https://poojatoursandtravels.com/images/ertiga.png",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "INR",
+              price: "13",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.8",
+              reviewCount: "420",
+            },
+          }),
+        }}
+      />
       <Navbar site={site} />
       <FleetDetailPage
         name="Ertiga"

@@ -6,9 +6,21 @@ import FloatingButtons from "@/components/FloatingButtons";
 import FleetDetailPage from "@/components/FleetDetailPage";
 
 export const metadata: Metadata = {
-  title: "Hatchback Cab | Pooja Tours and Travels",
+  title: "Hatchback Cab @ ₹10/km | Celerio, WagonR | Pooja Tours",
   description:
-    "Book an affordable hatchback cab at just ₹10/km. Ideal for city transfers with 3 seats.",
+    "Book an affordable hatchback cab at ₹10/km in Pune & Mumbai. Celerio, WagonR - 3 seater. Perfect for quick city transfers, solo travelers. 24/7 available, professional driver.",
+  keywords:
+    "hatchback cab, economy taxi, city cab, Celerio, WagonR, affordable cab, Pune taxi, cab booking",
+  openGraph: {
+    title: "Hatchback Cab @ ₹10/km | Pooja Tours and Travels",
+    description:
+      "Book affordable hatchback taxi at ₹10/km. Celerio, WagonR from Pune & Mumbai. 3 seater, ideal for city transfers.",
+    url: "https://poojatoursandtravels.com/fleet/hatchback",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://poojatoursandtravels.com/fleet/hatchback",
+  },
 };
 
 export default async function HatchbackPage() {
@@ -16,6 +28,32 @@ export default async function HatchbackPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Hatchback Cab Service - Celerio, WagonR",
+            description:
+              "Book an affordable hatchback cab at ₹10/km. Perfect for city transfers with 3 seats. Celerio, WagonR available.",
+            image: "https://poojatoursandtravels.com/images/hatchback.png",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "INR",
+              price: "10",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.6",
+              reviewCount: "280",
+            },
+          }),
+        }}
+      />
       <Navbar site={site} />
       <FleetDetailPage
         name="Hatchback"

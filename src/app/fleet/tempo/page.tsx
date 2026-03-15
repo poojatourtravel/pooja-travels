@@ -6,9 +6,21 @@ import FloatingButtons from "@/components/FloatingButtons";
 import FleetDetailPage from "@/components/FleetDetailPage";
 
 export const metadata: Metadata = {
-  title: "Tempo Traveller | Pooja Tours and Travels",
+  title: "Tempo Traveller @ ₹24/km | 13-Seater Group Bus | Pooja Tours",
   description:
-    "Book a Tempo Traveller at ₹24/km. 13-seater ideal for group tours, pilgrimages and corporate events from Pune & Mumbai.",
+    "Book a 13-seater Tempo Traveller at ₹24/km from Pune & Mumbai. Perfect for group tours, pilgrimages, corporate events, weddings. AC, professional driver, spacious luggage, 24/7 available.",
+  keywords:
+    "Tempo Traveller, 13 seater, group tour, pilgrimage cab, corporate event travel, wedding transport, group travel, Pune tours",
+  openGraph: {
+    title: "Tempo Traveller @ ₹24/km | Pooja Tours and Travels",
+    description:
+      "Book a 13-seater Tempo Traveller at ₹24/km for group tours, pilgrimages, and corporate events from Pune & Mumbai.",
+    url: "https://poojatoursandtravels.com/fleet/tempo",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://poojatoursandtravels.com/fleet/tempo",
+  },
 };
 
 export default async function TempoPage() {
@@ -16,6 +28,32 @@ export default async function TempoPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Tempo Traveller Group Coach - 13 Seater",
+            description:
+              "Book a 13-seater Tempo Traveller at ₹24/km. Perfect for group tours, pilgrimages, corporate events, and weddings from Pune & Mumbai.",
+            image: "https://poojatoursandtravels.com/images/tempo.png",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "INR",
+              price: "24",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.7",
+              reviewCount: "220",
+            },
+          }),
+        }}
+      />
       <Navbar site={site} />
       <FleetDetailPage
         name="Tempo Traveller"

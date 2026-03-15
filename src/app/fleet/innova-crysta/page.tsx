@@ -6,9 +6,21 @@ import FloatingButtons from "@/components/FloatingButtons";
 import FleetDetailPage from "@/components/FleetDetailPage";
 
 export const metadata: Metadata = {
-  title: "Innova Crysta Cab | Pooja Tours and Travels",
+  title: "Toyota Innova Crysta @ ₹18/km | Luxury 7-Seater Cab | Pooja Tours",
   description:
-    "Book a Toyota Innova Crysta at ₹18/km. Premium 7-seater luxury cab for business and outstation from Pune & Mumbai.",
+    "Book a Toyota Innova Crysta at ₹18/km from Pune & Mumbai. Premium luxury 7-seater for business executives, airport transfers, family outstation. Professional driver, luxury interiors, 24/7.",
+  keywords:
+    "Innova Crysta, luxury cab, 7 seater, premium taxi, executive cab, business travel, luxury outstation cab",
+  openGraph: {
+    title: "Toyota Innova Crysta @ ₹18/km | Pooja Tours and Travels",
+    description:
+      "Book luxury Toyota Innova Crysta at ₹18/km. 7-seater premium cab for executives and luxury outstation from Pune & Mumbai.",
+    url: "https://poojatoursandtravels.com/fleet/innova-crysta",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://poojatoursandtravels.com/fleet/innova-crysta",
+  },
 };
 
 export default async function InnovaCrystaPage() {
@@ -16,6 +28,32 @@ export default async function InnovaCrystaPage() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Toyota Innova Crysta Cab Service - Luxury 7 Seater",
+            description:
+              "Book a Toyota Innova Crysta at ₹18/km. Premium luxury 7-seater for executives, airport transfers, and family outstation from Pune & Mumbai.",
+            image: "https://poojatoursandtravels.com/images/innova-crysta.png",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "INR",
+              price: "18",
+              priceValidUntil: "2025-12-31",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "340",
+            },
+          }),
+        }}
+      />
       <Navbar site={site} />
       <FleetDetailPage
         name="Innova Crysta"
